@@ -1,0 +1,108 @@
+hr{box-sizing:content-box}
+.w3-btn, .w3-btn:link, .w3-btn:visited {
+  color:#FFFFFF;
+  background-color:#73AD21;
+  background-color:#4CAF50;  
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+grey-highlight: code
+
+
+"w3-example"
+example(h3)
+code: w3-code, notranslate, cssHigh
+try it yourself: w3-btn, w3-margin-bottom
+
+bold bad: strong
+
+yellow-background: w3-note
+
+use code tag:
+code {
+  font-size:105%;
+  color:crimson;
+  background-color:#f1f1f1;
+  padding:1px 4px;
+}
+
+exercise 1: w3-btn
+
+table: w3-table-all notranslate
+
+start: w3-col l2 m12
+sidesection
+
+sharing button: w3-text-grey sharethis
+
+------------------
+
+footer: footer w3-container w3-white
+googletag?
+
+w3-row w3-center w3-small
+w3-col l3 m3 s12
+
+w3-light-grey w3-padding w3-center
+
+
+no need table for 4 cols, just:
+w3-row w3-center w3-small
+w3-col l3 m6 s12
+top10
+<br>
+
+-------
+w3-center w3-small w3-opacity
+
+------
+pull down list: w3-row-padding, w3-col l2 m4
+
+close window:
+<span onclick='w3_close_nav("translate")' class='w3-closebtn w3-xlarge'>&times;</span>
+
+
+
+============================
+
+w3-broder-(color), w3-hover-border-(color)
+w3-text-(color)
+w3-(color)
+@keyframes fading,opac,animate(direction),animatezoom
+w3-card-(num)
+w3-topbar,w3-leftbar
+w3-spin
+w3-container
+w3-example
+w3-margin
+w3-display
+@media: define what display in different widths;
+w3-col.s1(default,mobile first?)
+w3-col.m1(min-width:601px)
+w3-col.l1(min-width:993px)
+
+w3-sidenav
+w3-dropdown
+w3-main
+w3-hover-text-(color)
+w3-btn
+
+/* ################## stdtheme ##################### */
+
+logo,img-responsive,table-responsive,topnav,leftmenu
+main,right,skyscraper,footer
+dropnav,theme
+fb,twitter,google+-square
+fblikeframe,popupframe
+googleSearch
+a.chapter
+chapter prev,next
+nav prev,home,next,video
+btnplayit,tryit_ex
+
+
+
+
+
+
+
