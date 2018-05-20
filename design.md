@@ -23,13 +23,13 @@ https://www.creativebloq.com/web-design/examples-css-912710
 ## Carousell
 1. normal two side arrow
 2. with dots, animation
-3. 
 ## Popover, window
 ## window in window
 1. youtube
 
 ## picture container
 hover text
+
 
 # Layout
 ## responsive
