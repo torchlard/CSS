@@ -1,16 +1,53 @@
 h2 {
-  /* display: none; */
+  display: none;
 }
 
 body {
   margin: 0;
   box-sizing: border-box;  
 }
+
+#app-base {
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  margin: 50px;
+  padding: 10px;
+}
+#app-base img {
+  cursor: grabbing;
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  background-color: rgb(211, 210, 210);
+}
+
+.brighter {
+  filter: brightness(130%)
+}
+
+/* #drop {
+  position: fixed;
+  border: 1px solid red;
+  width: 90px;
+  height: 90px;
+  padding: 0;
+  z-index: 10;
+  top:  250px;
+  left: 200px;
+}
+#drop img {
+  width: 80px;
+  height: 80px;
+} */
+
+
 /* carousell */
 #cousera-wrapper {
   display: flex;
   flex-wrap: nowrap;
   width: 750px;
+  display: none;
 }
 #cousera-wrapper button {
   background: transparent;
