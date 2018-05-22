@@ -7,26 +7,44 @@ body {
   box-sizing: border-box;  
 }
 
+/*
 #app-base {
-  width: 300px;
-  height: 400px;
+  width: 270px;
+  height: 370px;
   border: 1px solid black;
   margin: 50px;
   padding: 10px;
+  --block-size: 80px;
+
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  overflow: hidden;
 }
 #app-base img {
   cursor: grabbing;
-  width: 80px;
-  height: 80px;
+  width: var(--block-size);
+  height: var(--block-size);
   margin: 5px;
   background-color: rgb(211, 210, 210);
+}
+
+#app-base .empty-block {
+  background-color: #b4d4f3;
+  display: inline-block;
+  margin: 5px;
+  padding: 0;
+  width: var(--block-size);
+  height: var(--block-size);
+}
+#app-base .empty-block img {
+  margin: 0;
 }
 
 .brighter {
   filter: brightness(130%)
 }
 
-/* #drop {
+ #drop {
   position: fixed;
   border: 1px solid red;
   width: 90px;

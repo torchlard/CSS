@@ -18,38 +18,50 @@ function clean(node) {
 }
 clean(document.body)
 
+
+
+
+
+
 // drag and drop
 
-const drag = ev => {
-  ev.dataTransfer.setData("text", ev.target.id)
-}
-const drop = ev => {
-  ev.preventDefault()
-  let data = ev.dataTransfer.getData("text")
-  console.log(ev.target.tagName)
-  if (ev.target.tagName !== "IMG"){
-    ev.target.appendChild(document.getElementById(data) )
-  } else {
-    let parent = ev.target.parentNode
-    parent.insertBefore(document.getElementById(data), ev.target)
-  }
-}
-const allowDrop = ev => {
-  ev.preventDefault();
-  // console.log(ev.target.id)
-  document.getElementById(ev.target.id).classList.add("brighter")
-} 
+// const drag = ev => {
+//   ev.dataTransfer.setData("text", ev.target.id)
+// }
+// const drop = ev => {
+//   ev.preventDefault()
+//   let data = ev.dataTransfer.getData("text")
+//   console.log(ev.target)
+//   // add icon to empty position
+//   if(ev.target.classList.value.includes("empty-block")){
+//     ev.target.appendChild(document.getElementById(data))
+//   } else {
+//     let parent = ev.target.parentNode.parentNode
+//     console.log(parent)
+//     parent.insertBefore(document.getElementById(data), ev.target.parentNode)
+//   }
+// }
+// const allowDrop = ev => {
+//   ev.preventDefault();
+//   document.getElementById(ev.target.id).classList.add("brighter")
+// } 
 
-const dragLeave = ev => document.getElementById(ev.target.id).classList.remove("brighter")
+// const dragLeave = ev => document.getElementById(ev.target.id).classList.remove("brighter")
 
-document.querySelectorAll("img").forEach(i => {
-  i.ondragstart = drag;
-  i.ondragover = allowDrop
-  i.ondragleave = dragLeave
-})
+// document.querySelectorAll("img").forEach(i => {
+//   i.ondragstart = drag;
+//   i.ondragover = allowDrop
+//   i.ondragleave = dragLeave
+// })
 
-const app_base = document.getElementById("app-base")
-app_base.ondrop = drop
+// document.querySelectorAll(".empty-block").forEach(i => {
+//   i.ondragstart = drag;
+//   i.ondragover = allowDrop
+//   i.ondragleave = dragLeave
+// })
+
+// const app_base = document.getElementById("app-base")
+// app_base.ondrop = drop
 
 // // causera
 // const forward = document.getElementById("forward")
