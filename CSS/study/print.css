@@ -1,0 +1,66 @@
+body {
+    color: #000;
+}
+
+.nav-main, 
+.global-footer  {
+    display:none;
+}
+
+.nav-main .logo-container {
+    display: block;
+}
+.portfolio .image {
+	display:block;
+}
+.image-box img {
+	width:20%;
+	float:left;
+	margin-right:.25in;
+	margin-bottom:.25in;
+}
+.portfolio h2.alignright {
+	clear:both;
+	margin-top:.25in;
+}
+.page-template-portfolio-php .footer-item h5 {
+	clear:both;
+}
+
+a:link:after,
+a:visited:after,
+a:hover:after,
+a:active:after {
+content: " <" attr(href) "> ";
+color:#000;
+}
+
+a.logo-link:link:after,
+a.logo-link:visited:after,
+a.logo-link:hover:after,
+a.logo-link:active:after {
+    content: "";   
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+	font-family:helvtica, serif;
+	font-weight:normal;
+	padding:0;
+}
+h1 {
+	font-size:20pt;
+	line-height:22pt;
+}
+h2 {
+	font-size:18pt;
+	margin-bottom:0;	
+}
+h5 {
+	font-size:13pt;
+	margin-bottom:0;
+}
+p {
+	font-size:12pt;
+}
+
