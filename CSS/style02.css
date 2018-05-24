@@ -1,0 +1,9 @@
+x-org {
+  opacity: 0.8;
+  font-size: 18px;
+  /* pointer-events: none; */
+}
+
+p {
+  color: yellow;
+}
