@@ -1,17 +1,19 @@
 body {
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 body, form {
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 a {
-  color: #003399;
+  text-decoration: none;
+  outline: none;
 }
 
-a:hover {
-  color: #0033ff;
+nav {
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=base.css.map */

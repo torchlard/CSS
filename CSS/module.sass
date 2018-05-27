@@ -1,23 +1,136 @@
-.module
-  > h2
-    padding: 5px
-  span
-    padding: 5px
-  
-.pod
-  width: 100%
-  input[type=text]
-    width: 50%
+@import '_utilities'
+@import 'theme'
+@import 'variable'
 
-.pod-constrained input[type=text]
-  width: 100%  
+// .module
+//   > h2
+//     padding: 5px
+//   span
+//     padding: 5px
+  
+// .pod
+//   width: 100%
+//   input[type=text]
+//     width: 50%
 
-.pod-callout
-  width: 200px
-  input[type=text]
-    width: 180px
+// .pod-constrained input[type=text]
+//   width: 100%  
+
+// .pod-callout
+//   width: 200px
+//   input[type=text]
+//     width: 180px
+
+nav
+  display: flex
+  flex-wrap: nowrap
+  justify-content: center
+  align-items: center
+
+.nav-link
+  color: white  
+  font-size: 14px
+  letter-spacing: 1px
+  margin: 0 15px
+  padding: 22px 0 18px 0
+  border-bottom: 5px solid transparent
+  cursor: pointer
+  
+.nav-search
+  border: 1px solid $theme-color
+  border-radius: 80px
+  cursor: pointer
+  margin-left: 100px
+
+#nav-search__icon
+  @include mask-image(url(../../icon/search.svg))
+  @include mask-size(55%)
+
+#nav-menu__icon
+  @include mask-image(url(../../icon/menu.svg))
+  @include mask-size(95%)
+  margin-right: 6px
+
+.nav-icon
+  $size: 35px  
+  @include mask-repeat(no-repeat)
+  @include mask-position(center)
+  background-color: $theme-color
+  width: $size
+  height: $size
+
+@media only screen and (min-width: $nav--width3)
+  .nav-more, .nav-link__left, .nav-menu
+    display: none  
+
+@media only screen and (min-width: $nav--width1) and (max-width: $nav--width3)
+  .nav-more
+    display: initial
+    position: relative
+
+  .nav-link-wrapper--active
+    position: absolute
+    top: 60px
+    right: -10px
+    display: flex
+    flex-direction: column
+    vertical-align: top
+    background-color: #000000
+  
+  .nav-link__container
+    color: white  
+    font-size: 14px
+    letter-spacing: 1px
+    margin: 10px 15px
+    width: 145px
+
+  .nav-link:nth-child(6), .nav-link:nth-child(7), .nav-link__left, .nav-menu
+    display: none
+
+@media only screen and (min-width: $nav--width2) and (max-width: $nav--width3)
+  .nav-link__container:nth-child(1), .nav-link__container:nth-child(2)
+    display: none
+
+@media only screen and (min-width: $nav--width1) and (max-width: $nav--width2)  
+  .nav-link:nth-child(4), .nav-link:nth-child(5)
+    display: none
+
+@media only screen and (max-width: $nav--width1)    
+  .nav-more, .nav-link, .nav-search
+    display: none  
+  .nav-link__left
+    font-size: 12px
+    text-transform: none
+    padding: 0 10px
+  nav
+    justify-content: space-between
+  .nav-menu
+    cursor: pointer
+    display: flex
+    align-items: center
+    font-size: 13px
+    color: $theme-color
+
+  #nav-menu__icon
+    margin-left: 10px
+
+
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+    
   
   
