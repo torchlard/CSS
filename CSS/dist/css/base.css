@@ -23,5 +23,26 @@ a {
   text-decoration: none;
   outline: none;
   box-sizing: border-box;
+  color: white;
+}
+
+p {
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 15px 10px;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 15px 10px;
 }
 /*# sourceMappingURL=base.css.map */

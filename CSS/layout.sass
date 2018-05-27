@@ -1,41 +1,20 @@
 @import 'variable'
-// #header, #article, #footer 
-//   width: 960px
-//   margin: auto
-
-// #article
-//   border: solid #cccccc
-//   border-width: 1px 0 0
-//   float: left
-
-// #sidebar
-//   float: right
-
-// .l-flipped
-//   #article
-//     float: right
-//   #sidebar
-//     float: left
-    
-// .l-fixed
-//   #article
-//     width: 600px
-//   #sidebar
-//     width: 200px
-  
 
 nav
+  font-weight: bold
   text-transform: uppercase  
   background-color: #000000
   height: 60px  
 
 main
   display: flex
+  justify-content: space-between
   flex-direction: column  
   justify-content: center
 
 .section
   margin-bottom: 20px
+  display: flex
 
 @media screen and (min-width: $nav--width3)
   main
@@ -46,16 +25,27 @@ main
 @media screen and (min-width: $nav--width1) and (max-width: $nav--width3)
   main
     margin: 10px 0
+  .section
+    padding: 30px 50px
+
 
 @media screen and (max-width: $nav--width2)
   .section
     padding: 10px 5px
 
-.section2 
-  background-color: #292a2c
-
+@media screen and (max-width: $nav--width1)
+  .section
+    flex-direction: column
 
 .section1
+  margin-bottom: 0
+  padding: 30px 0 0 50px
+  justify-content: space-between
+
+.section2 
+  background-color: #292a2c
+  flex-direction: column
+
 
   
   

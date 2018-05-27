@@ -1,15 +1,75 @@
+@import '_utilities'
+
 $theme-color: #2cd6f6
+$black: #21242b
+
+.border-button
+  display: inline-block
+  font-size: 14px
+  padding: 15px
+  margin: 10px 10px  
+  border: 1px solid $theme-color  
+  background-color: $black
+  text-transform: uppercase
+  &:hover
+    color: $theme-color
+
+%icon-all
+  @include mask-repeat(no-repeat)
+  @include mask-position(center)
+
+.icon-s1
+  @extend %icon-all
+  @include mask-size(cover)  
+  background-color: white
+  width: 20px
+  height: 20px
+  margin: 10px
+
+.communication-icon-wrapper
+  $size: 25px
+  border: 1px solid rgba($theme-color, 0.2)
+  border-radius: 80px
+  width: $size
+  height: $size
+  margin: 5px
+  padding: 0
+  cursor: pointer
+  &:hover
+    border: 1px solid $theme-color
+
+.communication-icon
+  $size: 25px
+  @extend %icon-all
+  @include mask-size(55%)
+  background-color: $theme-color
+  width: $size
+  height: $size
+
+.p-m1
+  font-size: 14px  
+  margin: 10px 0
+.p-s1
+  font-size: 12px
+  margin: 5px 0
 
 
+%a-all  
+  text-decoration: underline
+  position: relative
+  &::after
+    position: absolute
+    content: "\2002 \25B8"
+    bottom: 0
+    right: -15px
 
+.a-s1
+  font-size: 12px
+  margin: 5px 0
+  @extend %a-all
 
-
-
-
-
-
-
-
-  
-  
+.a-m1
+  font-size: 15px
+  margin: 15px 0
+  @extend %a-all
   

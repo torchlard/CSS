@@ -17,5 +17,19 @@
 .hide
   display: none
 
+@mixin icon($width, $height)
+  @include mask-repeat(no-repeat)
+  @include mask-position(center)
+  background-color: $theme-color
+  width: $width
+  height: $height
+
+@mixin separator
+  content: "\2002 \\ \\ "
+  letter-spacing: 1px
+  color: white
+
+
+  
 
  

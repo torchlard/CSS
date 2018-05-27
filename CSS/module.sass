@@ -2,25 +2,6 @@
 @import 'theme'
 @import 'variable'
 
-// .module
-//   > h2
-//     padding: 5px
-//   span
-//     padding: 5px
-  
-// .pod
-//   width: 100%
-//   input[type=text]
-//     width: 50%
-
-// .pod-constrained input[type=text]
-//   width: 100%  
-
-// .pod-callout
-//   width: 200px
-//   input[type=text]
-//     width: 180px
-
 nav
   display: flex
   flex-wrap: nowrap
@@ -52,12 +33,7 @@ nav
   margin-right: 6px
 
 .nav-icon
-  $size: 35px  
-  @include mask-repeat(no-repeat)
-  @include mask-position(center)
-  background-color: $theme-color
-  width: $size
-  height: $size
+  @include icon(35px,35px)
 
 @media only screen and (min-width: $nav--width3)
   .nav-more, .nav-link__left, .nav-menu
@@ -82,7 +58,7 @@ nav
     font-size: 14px
     letter-spacing: 1px
     margin: 10px 15px
-    width: 145px
+    width: 155px
 
   .nav-link:nth-child(6), .nav-link:nth-child(7), .nav-link__left, .nav-menu
     display: none
@@ -115,22 +91,99 @@ nav
     margin-left: 10px
 
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+// Section 1
+
+.section-va
+  align-self: flex-end
+  padding-top: 200px
+
+#section-va__icon
+  @include icon(30vw,15vw)
+  @include mask-image(url(../../icon/va.svg))
+  @include mask-size(contain)
+  mask-position: 0 0
+  // position: absolute
+
+.section1__header
+  font-size: 16px
+  margin-left: 10px
+
+.section1__header1
+  text-transform: uppercase
+  color: $theme-color
+
+@media screen and (min-width: $nav--width2)    
+  .section1__header1::after
+    @include separator
+
+@media screen and (max-width: $nav--width2)  
+  .section1
+    padding-left: 0
+    h1
+      font-size: 28px   
+      margin: 5px 5px
+    h4
+      display: none
+    .section1__header1
+      display: block
+
+@media screen and (max-width: $nav--width1)
+  .section-va
+    padding-top: 30px
+  #section-va__icon
+    @include icon(46vw,23vw)
+  .border-button
+    color: $theme-color
+    border: 1px solid $black !important
   
 
+// Section 2
 
+#icon-time
+  @include mask-image(url(../../icon/clock.svg))
+#icon-ticket
+  @include mask-image(url(../../icon/ticket.svg))
+#icon-museum
+  @include mask-image(url(../../icon/museum.svg))  
+#icon-fb
+  @include mask-image(url(../../icon/facebook-logo.svg))  
+#icon-twitter
+  @include mask-image(url(../../icon/twitter-logo.svg))  
+#icon-youtube
+  @include mask-image(url(../../icon/youtube.svg))  
+#icon-instagram
+  @include mask-image(url(../../icon/instagram.svg))  
+#icon-pinterest
+  @include mask-image(url(../../icon/pinterest.svg))  
+#icon-tumblr
+  @include mask-image(url(../../icon/tumblr.svg))  
+
+.section2 h2
+  margin-top: 10px;  
+
+.section2__item2 .p-m2
+  text-transform: uppercase
+.section2__item1__item
+  display: flex
+  margin: 10px 
+
+@media screen and (min-width: $nav--width2)  
+  .section2__item1, .section2__item2, .comm-icon-list
+    display: flex
+    flex-direction: row
+  .section2__item2
+    // justify-content: space-between
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
     
-  
   
