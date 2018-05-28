@@ -344,4 +344,11 @@ nav {
     flex-direction: row;
   }
 }
+
+@media screen and (max-width: 798px) {
+  .comm-icon-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
 /*# sourceMappingURL=module.css.map */
